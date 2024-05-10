@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:alpha="0.05"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_trainings" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/diaryCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/yellow_background"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/diaryIv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_diary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway"
+                    android:text="Diary"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/statisticsCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/yellow_background"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/statisticsIv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/baseline_query_stats_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway"
+                    android:text="Statistics"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/trainingsCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/yellow_background"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/trainingsIv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/baseline_fitness_center_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway"
+                    android:text="Trainings"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/about_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/yellow_background"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/aboutIv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/baseline_contact_support_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway"
+                    android:text="About"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

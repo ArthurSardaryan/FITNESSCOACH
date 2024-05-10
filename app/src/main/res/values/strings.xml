@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FITNESS COACH</string>
+    <string name="calories_s">Calories: %s</string>
+    <string name="fats_s_g">Fats: %s g</string>
+    <string name="protein_s_g">Protein: %s g</string>
+    <string name="carbs_s_g">Carbs: %s g</string>
+    <string name="sets_s">Sets: %s</string>
+    <string name="lunch_name">Meal Name</string>
+    <string name="add_meal_n_to_diary">Add meal\n to diary</string>
+    <string name="calories">Calories</string>
+    <string name="protein">Protein</string>
+    <string name="fats">Fats</string>
+    <string name="carbs">Carbs</string>
+    <string name="add_workout_n_to_trainings">Add workout\n to trainings</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="workout_type">Workout Type</string>
+    <string name="your_name">Your Name</string>
+    <string name="workouts_n_s">Workouts:\n %s</string>
+    <string name="meals_n_s">Meals:\n %s</string>
+    <string name="calories_earned_s">Calories earned: %s</string>
+    <string name="calories_burned_s">Calories burned: %s</string>
+    <string name="reps_s">Reps: %s</string>
+    <string name="fill_all_fields_correctly">Fill all fields correctly</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+</resources>
